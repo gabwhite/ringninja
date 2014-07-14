@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>ringninja</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <header class="form">
+            <div class="container">
+                <h1><a href="index.html"> <img class="logo" src="images/ringninja-logo.svg" alt="Ring Ninja Logo"></a></h1>
+            </div>
+        </header>
+    
+       <div class="wide-container">
+            <div class="content">
+                <form action="ring-ninja">
+                    
+                    <fieldset class="mandatory">
+                        <div class="field" id="source">
+                            <label for="source">Source</label>
+                            <input type="text">
+                        </div>
+                        
+                        <div class="field" id="forward"> 
+                            <label for="forward">Forward To</label>
+                            <input type="text">
+                        </div>
+                    </fieldset>
+                    
+                    <div class="field">
+                        <input type="checkbox" id="record">
+                        <label class="checkbox record" for="record">Record</label>
+                    </div>
+
+                    <div class="field">
+                        <input type="checkbox" id="say-checkbox">
+                        <label class="checkbox" for="say-checkbox">Say</label>
+                        <label class="hidden" for="Say-text">Add a Recording message here</label>
+                        <input type="text" placeholder="Add recording message here">
+                    </div>
+                    
+                    <div class="field">
+                        <input type="checkbox" id="email-checkbox">
+                        <label class="checkbox" for="email-checkbox">Email</label>
+                        <label class="hidden" for="email-textarea">Separate each address with a comma</label>
+                        <textarea name="email" cols="30" rows="10" placeholder="Separate each address with a comma"></textarea>
+                    </div>
+
+                    <div class="field">
+                        <input type="checkbox" id="timeout-checkbox">
+                        <label class="checkbox" for="timeout-checkbox">Timeout</label>
+                        <label class="hidden" for="timeout-text">Add a timeout length</label>
+                        <input type="text" placeholder="Add a timeout length">
+                    </div>
+
+                    <div class="field">
+                        <input type="checkbox" id="ga-checkbox">
+                        <label class="checkbox" for="ga-checkbox">Google Analytics</label>
+                        <label class="hidden" for="ga-text">Ex: UA-44102330-21</label>
+                        <input type="text" placeholder="Ex: UA-44102330-21">
+                    </div>
+
+                    <div class="field">
+                        <input type="checkbox" id="tag-manager">
+                        <label class="checkbox record" for="tag-manager">Use Google Tag Manager Data Layer</label>
+                    </div>
+
+                    <fieldset class="google-tracking">
+                        <div class="field">
+                            <label for="event">Track as</label>
+                            <select name="event" id="event">
+                                <option value="Event">Event</option>
+                                <option value="pageview">Page View</option>
+                            </select>
+                        </div>
+                        
+                        <div class="field">   
+                            <label for="value">Event Value</label>
+                            <input type="text" placeholder="event">
+                        </div>
+                    </fieldset>
+
+                    <input type="submit" value="Save">
+                </form> 
+                    
+                    
+
+            </div> <!-- end of content -->
+
+            <div class="sidebar">
+                <div class="callout">
+                    <h3>Your Ring.Ninja URL</h3>
+                    <h4>Private</h4>
+                    <p>http://ring.ninja/1b786e0a</p>
+                    <button class="small">Click to copy</button>
+
+                    <h4>Public</h4>
+                    <p>http://ring.ninja/28bdsf23</p>
+                    <button class="small">Click to Copy</button>
+                </div>
+                <div class="callout">
+                    <h3 class="blue">Using Wordpress?</h2>
+                    <p>Download our plugin for Wordpress and add ring.ninja to any of your websites.</p>
+                    <button class="red">Download Plugin</button>
+                </div>
+            </div> <!-- end of sidebar -->
+        </div> <!-- end wide-container -->
+
+    <footer class="form">
+        <p>Powered by <a target="_blank" href="http://www.twilio.com/">Twilio</a> created by <a target="_blank" href="http://www.isl.ca">ISL Digital Marketing</a>  </p>
+    </footer>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

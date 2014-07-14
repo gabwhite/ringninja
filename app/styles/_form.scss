@@ -1,0 +1,114 @@
+header.form {
+	background: url(../images/header_form.png) 0 0  no-repeat;
+	background-size: cover;
+	width: 100%;
+	
+	h1 {
+		margin: 0 auto;
+	}
+
+	.container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.logo {
+		margin:0 auto;
+	}
+}
+
+fieldset.mandatory {
+	background: $blue-light;
+	border: 0;
+	padding: 2%;
+
+	label{
+		width: 15%;
+		float: left;
+	}
+}
+
+fieldset.google-tracking {
+	border: 0;
+	padding-left: 10%;
+}
+
+.field {
+	display: block;
+	padding: 2% 0;
+}
+
+label {
+	@include font-size(1);
+	color: $body;
+	padding: 2% 0;
+}
+
+label.hidden {
+	display: none;
+}
+
+/* Call-Out Sidebar */
+
+.callout {
+	margin: 5%;
+	padding: 5%;
+}
+
+button.small {
+	@include button;
+	width: 120px;
+	font-weight: bold;
+	@include font-size(1);
+	height: 30px;
+	color: white;
+	background: $blue;
+}
+
+/* Checkboxes */
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"]:checked + label {
+	background: url(../images/checkbox-checked.svg) no-repeat;
+	background-size: 25px;
+	padding: 3px 40px;
+}
+
+label.checkbox {
+	background: url(../images/checkbox.svg) no-repeat;
+	background-size: 25px;
+	padding: 3px 40px;
+	text-indent: 25px;
+}
+
+.field label.checkbox.record {
+	display: block;
+	width: 100%;
+	margin: 4% 0;
+}
+
+input[type="checkbox"]:checked + label.checkbox.record {
+	display: block;
+	width: 100%;
+}
+
+/* input fields */
+input[type="text"], textarea{
+	padding: 1%;
+	border: 1px solid $super-light;
+	opacity: 0.5;
+
+	&:focus {
+		opacity: 1;
+		outline: 1px solid $body;
+	}
+}
+
+input[type="submit"]{
+	@include button;
+	background: $blue;
+	text-align: center;
+}

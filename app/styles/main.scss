@@ -1,0 +1,145 @@
+// bower:scss
+// endbower
+
+
+
+@import 'mixins';
+
+
+/*===================================
+=            BASE STYLES            =
+===================================*/
+body {
+    font-size: 62.5%;
+    margin: 0;
+    font-family: $body-font;
+}
+
+header {
+    background:  url(../images/header_illustration.png) 0px -100px no-repeat;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+
+    h1 {
+        color: white;
+        padding: 5% auto;
+        text-align: center;
+        @include font-size(3);
+    }
+
+    img.icon {
+        width: 10%;
+    }
+}
+
+.logo {
+    margin: 0 auto;
+    padding: 2% 0;
+    display: block;
+}
+
+h2 {
+    @include h2;
+    margin: 5% auto;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2.red {
+    @include h2;
+    color: $red;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    @include h3;
+}
+
+p {
+    @include p;
+}
+
+button.red {
+    @include button;
+    background: $red;
+
+    &:hover {
+        background: $red-hover;
+    }
+}
+
+button.blue {
+    @include button;
+    background: $blue;
+
+    &:hover {
+        background: $blue-hover;
+    }
+}
+
+img.icon {
+    width: 5%;
+    display: block;
+    margin: 0 auto;
+}
+
+.full-width-grey, .callout {
+    background: $super-light;
+    padding: 2%;
+
+    p {
+        text-align: center;
+    }
+}
+
+/* Features call-outs */
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid $light-grey;
+    display: inline-block;
+    float: left;
+
+    img.icon {
+        width: 70%;
+        padding: 15% 0;
+    }
+}
+
+.features {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+
+footer {
+    background: $super-light;
+    padding: 5%;
+    text-align: center;
+
+    a {
+        color: $blue;
+        text-decoration: none;
+
+        &:hover{
+            color: $blue-hover;  
+        }
+    }
+}
+
+/*-----  End of BASE STYLES  ------*/
+
+/*==================================
+=            Responsive            =
+==================================*/
+@import 'form';
+@import '320up';
+
+/*-----  End of Responsive  ------*/
+
+
+
+

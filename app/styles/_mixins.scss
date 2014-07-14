@@ -1,0 +1,51 @@
+$red        : #e5435a;
+$red-hover	: darken($red, 10%);
+$blue       : #1ab6b4;
+$blue-hover : darken($blue, 10%);
+$blue-light : lighten($blue, 50%);
+$body       : #898989;
+$light-grey : #c2c2c2;
+$super-light : #eeebeb;
+
+$body-font : 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+
+@mixin font-size($sizeValue: 1.6, $line: $sizeValue * 1.5) {
+  font-size: ($sizeValue * 10) + px;
+  line-height: ($line * 10) + px;
+  font-size: $sizeValue + rem;
+  line-height: $line + rem;
+}
+
+
+@mixin button {
+	text-transform: uppercase;
+	color: white;
+	width: 300px;
+	height: 50px;
+	border: none;
+	display: block;
+	margin: 0 auto;
+	@include font-size(1);
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+@mixin h2 {
+	color: $body;
+	@include font-size(2);  
+}
+
+@mixin h3 {
+	color: $red;
+	font-weight: 700;
+	@include font-size(1.5);
+}
+
+@mixin p {
+	color: $body;
+	@include font-size(1);
+	margin: 0 0 10% 0;
+}
