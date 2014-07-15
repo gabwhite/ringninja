@@ -1,0 +1,44 @@
+/* Call-Out Sidebar */
+
+.callout {
+	margin: 8%;
+	padding: 2% 5%;
+}
+
+button.small {
+	@include button;
+	width: 110px;
+	height: 25px;
+	font-weight: bold;
+	@include font-size(0.75);
+	color: white;
+	background: $blue;
+	margin: 0 0 10% 0;
+}
+
+
+.callout {
+	h3 {
+		text-transform: uppercase;
+		color: $blue;
+		@include font-size(1);
+		margin: 5% 0;
+	}
+
+	h4 {
+		@include font-size(1);
+		color: $red;
+		margin: 1% 0;
+		display: block;
+	}
+
+	p {
+		text-align: left;
+		margin: 2% 0;
+	}
+
+	button.red {
+		width: 100%;
+		margin: 10% 0;
+	}
+}

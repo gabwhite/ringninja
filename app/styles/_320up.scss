@@ -6,11 +6,11 @@
 	/* Header */
 
 	.logo {
-		width: 80%;
+		width: 70%;
 	}
 
 	header {
-		background:  url(../images/header_illustration.png) -305px -160px no-repeat;
+		background:  url(../images/header_illustration.png) -305px 0px no-repeat;
 
 		img.icon {
 			width: 25%;
@@ -90,7 +90,7 @@
 		}
 		
 		input[type="text"]{
-			width: 60%;
+			width: 63%;
 			@include font-size(1);
 		}
 	}
@@ -119,6 +119,27 @@
 		}
 	}
 
+	fieldset.google-tracking {
+		.field{
+			padding: 5%;
+		}
+
+		label {
+			width: 30%;
+			padding: 1% 3%;
+			float: left;
+		}
+
+		input[type="text"]{
+			width: 60%;
+			float: right;
+		}
+
+		select {
+			width: 60%;
+			float: right;
+		}
+	}
 	/*-----  End of Form page  ------*/
 	
 	

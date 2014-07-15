@@ -5,6 +5,10 @@ header.form {
 	
 	h1 {
 		margin: 0 auto;
+		text-indent: -9999px;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 
 	.container {
@@ -13,7 +17,9 @@ header.form {
 	}
 
 	.logo {
-		margin:0 auto;
+		margin: 0 auto;
+		max-width: 300px;
+		padding: 2%;
 	}
 }
 
@@ -46,23 +52,6 @@ label {
 
 label.hidden {
 	display: none;
-}
-
-/* Call-Out Sidebar */
-
-.callout {
-	margin: 5%;
-	padding: 5%;
-}
-
-button.small {
-	@include button;
-	width: 120px;
-	font-weight: bold;
-	@include font-size(1);
-	height: 30px;
-	color: white;
-	background: $blue;
 }
 
 /* Checkboxes */
@@ -111,4 +100,26 @@ input[type="submit"]{
 	@include button;
 	background: $blue;
 	text-align: center;
+}
+
+/* Select */
+
+select {
+	padding: 1%;
+	width: 70%;
+	float: right;
+	@include font-size(1);
+	-webkit-appearance: none;
+	font-family: $body-font;
+	color: $body;
+	border-radius: 0;
+	border: 1px solid $super-light;
+	opacity: 0.5;
+	background: url(../images/05-arrow-red.svg) no-repeat right;
+	background-size: contain;
+
+	&:focus {
+		opacity: 1;
+		outline: 1px solid $body;
+	}
 }
